@@ -7,12 +7,12 @@ document.onreadystatechange = function () {
 			item.click();
 		});
 		var phoneMask = new IMask(
-		document.querySelector('#form_text_10'), {
-			mask: '+{375}(00)000-00-00'
-		});
+			document.querySelector('#form_text_10'), {
+				mask: '+{375}(00)000-00-00'
+			});
 		document.querySelector('#perezv5min').addEventListener('click', swlCallMe, false);
-		document.querySelectorAll('.want-zamer').forEach(function(item, i, arr) {
-		  document.querySelectorAll('.want-zamer')[i].addEventListener('click', wantZamer, false);
+		document.querySelectorAll('.want-zamer').forEach(function (item, i, arr) {
+			document.querySelectorAll('.want-zamer')[i].addEventListener('click', wantZamer, false);
 		});
 	}
 }
@@ -32,12 +32,24 @@ function swlCallMe() {
 	})*/
 	swal({
 		title: 'Закажите бесплатный звонок!',
+		html: '<div id="recaptcha"></div>',
 		showCloseButton: true,
 		width: 600,
-		html: document.querySelector('.modal-callme').outerHTML,
-		showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a></form>'
+		title: 'SweetAlert2 + Recaptcha',
+		onOpen: function () {
+			grecaptcha.render('recaptcha', {
+				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9'
+			});
+		},
+		preConfirm: function () {
+			if (grecaptcha.getResponse().length === 0) {
+				swal.showValidationError(`Please verify that you're not a robot`)
+			}
+		}
+		/*showConfirmButton: false,
+		footer: '<a class="red-button-sm">Заказать</a></form>'*/
 	})
+
 	document.querySelector('.swal2-footer .red-button-sm').addEventListener('click', () => {
 		if (document.querySelector('#swal2-content .form-control').value == '') {
 			document.querySelector('.swal2-content .invalid-feedback').style.display = 'block';
@@ -132,8 +144,8 @@ function swl($div) { // all items page
 
 function swl2($div) { // main page
 	var $html = '';
-	$div.parentNode.parentNode.querySelectorAll('img').forEach(function(item, i, arr) {
-	  $html = $html + $div.parentNode.parentNode.querySelectorAll('img')[i].outerHTML;
+	$div.parentNode.parentNode.querySelectorAll('img').forEach(function (item, i, arr) {
+		$html = $html + $div.parentNode.parentNode.querySelectorAll('img')[i].outerHTML;
 	});
 	swal({
 		title: $div.parentNode.parentNode.querySelector('.head-txt').innerHTML,
