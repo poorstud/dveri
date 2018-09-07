@@ -22,35 +22,22 @@ function swlCallMe() {
 		document.querySelector('.es17_input .invalid-feedback').style.display = 'block';
 		return;
 	}
-	/*swal({
-		title: 'Закажите бесплатный звонок!',
-		showCloseButton: true,
-		width: 600,
-		html: '<form><div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>' + document.querySelector('.g-recaptcha').outerHTML,
-		showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a></form>'
-	})*/
 	var verifyCallback = function(response) {
 			alert(response);
 		  };
 	swal({
 		title: 'Закажите бесплатный звонок!',
-		html: '<div id="recaptcha"></div>',
+		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br><div id="recaptcha"></div>',
 		showCloseButton: true,
+		showConfirmButton: false,
 		width: 600,
+		footer: '<a class="red-button-sm">Заказать</a></form>',
 		onOpen: function () {
 			grecaptcha.render('recaptcha', {
 				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
 				'callback' : verifyCallback
 			});
-		},
-		preConfirm: function () {
-			if (grecaptcha.getResponse().length === 0) {
-				swal.showValidationError(`Please verify that you're not a robot`)
-			}
 		}
-		/*showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a></form>'*/
 	})
 
 	document.querySelector('.swal2-footer .red-button-sm').addEventListener('click', () => {
