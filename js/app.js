@@ -30,15 +30,18 @@ function swlCallMe() {
 		showConfirmButton: false,
 		footer: '<a class="red-button-sm">Заказать</a></form>'
 	})*/
+	var verifyCallback = function(response) {
+			alert(response);
+		  };
 	swal({
 		title: 'Закажите бесплатный звонок!',
 		html: '<div id="recaptcha"></div>',
 		showCloseButton: true,
 		width: 600,
-		title: 'SweetAlert2 + Recaptcha',
 		onOpen: function () {
 			grecaptcha.render('recaptcha', {
-				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9'
+				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
+				'callback' : verifyCallback
 			});
 		},
 		preConfirm: function () {
