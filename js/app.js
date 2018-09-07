@@ -26,7 +26,7 @@ function swlCallMe() {
 		title: 'Закажите бесплатный звонок!',
 		showCloseButton: true,
 		width: 600,
-		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"></div><div class="invalid-feedback">Поле обязательно для заполнения!</div><br>',
+		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>',
 		showConfirmButton: false,
 		footer: '<a class="red-button-sm">Заказать</a>'
 	})
