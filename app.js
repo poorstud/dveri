@@ -7,12 +7,12 @@ document.onreadystatechange = function () {
 			item.click();
 		});
 		var phoneMask = new IMask(
-		document.querySelector('#form_text_10'), {
-			mask: '+{375}(00)000-00-00'
-		});
+			document.querySelector('#form_text_10'), {
+				mask: '+{375}(00)000-00-00'
+			});
 		document.querySelector('#perezv5min').addEventListener('click', swlCallMe, false);
-		document.querySelectorAll('.want-zamer').forEach(function(item, i, arr) {
-		  document.querySelectorAll('.want-zamer')[i].addEventListener('click', wantZamer, false);
+		document.querySelectorAll('.want-zamer').forEach(function (item, i, arr) {
+			document.querySelectorAll('.want-zamer')[i].addEventListener('click', wantZamer, false);
 		});
 	}
 }
@@ -22,22 +22,25 @@ function swlCallMe() {
 		document.querySelector('.es17_input .invalid-feedback').style.display = 'block';
 		return;
 	}
-	/*swal({
-		title: 'Закажите бесплатный звонок!',
-		showCloseButton: true,
-		width: 600,
-		html: '<form><div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>' + document.querySelector('.g-recaptcha').outerHTML,
-		showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a></form>'
-	})*/
+
+	var verifyCallback = function(response) {
+			alert(response);
+		  };
 	swal({
 		title: 'Закажите бесплатный звонок!',
+		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br><div id="recaptcha"></div>',
 		showCloseButton: true,
-		width: 600,
-		html: '<form action="alert()" method="POST">' + document.querySelector('.g-recaptcha').outerHTML + '<br/><input type="submit" value="Submit"></form>',
 		showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a></form>'
+		width: 600,
+		footer: '<a class="red-button-sm">Заказать</a></form>',
+		onOpen: function () {
+			grecaptcha.render('recaptcha', {
+				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
+				'callback' : verifyCallback
+			});
+		}
 	})
+
 	document.querySelector('.swal2-footer .red-button-sm').addEventListener('click', () => {
 		if (document.querySelector('#swal2-content .form-control').value == '') {
 			document.querySelector('.swal2-content .invalid-feedback').style.display = 'block';
@@ -132,8 +135,8 @@ function swl($div) { // all items page
 
 function swl2($div) { // main page
 	var $html = '';
-	$div.parentNode.parentNode.querySelectorAll('img').forEach(function(item, i, arr) {
-	  $html = $html + $div.parentNode.parentNode.querySelectorAll('img')[i].outerHTML;
+	$div.parentNode.parentNode.querySelectorAll('img').forEach(function (item, i, arr) {
+		$html = $html + $div.parentNode.parentNode.querySelectorAll('img')[i].outerHTML;
 	});
 	swal({
 		title: $div.parentNode.parentNode.querySelector('.head-txt').innerHTML,
