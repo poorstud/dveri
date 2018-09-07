@@ -34,7 +34,7 @@ function swlCallMe() {
 		title: 'Закажите бесплатный звонок!',
 		showCloseButton: true,
 		width: 600,
-		html: '<form method="post"><input type="text" name="email"><input type="text" name="url">' + + document.querySelector('.g-recaptcha').outerHTML + '<input type="submint" name="sub_but"></form>',
+		html: '<form action="alert()" method="POST">' + document.querySelector('.g-recaptcha').outerHTML + '<br/><input type="submit" value="Submit"></form>',
 		showConfirmButton: false,
 		footer: '<a class="red-button-sm">Заказать</a></form>'
 	})
