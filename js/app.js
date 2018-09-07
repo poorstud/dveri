@@ -28,7 +28,7 @@ function swlCallMe() {
 		width: 600,
 		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>',
 		showConfirmButton: false,
-		footer: '<div class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm">Заказать</a>'
+		footer: '<a class="red-button-sm">Заказать</a>'
 	})
 	document.querySelector('.swal2-footer .red-button-sm').addEventListener('click', () => {
 		if (document.querySelector('#swal2-content .form-control').value == '') {
@@ -69,7 +69,7 @@ function wantZamer() {
 		width: 600,
 		html: '<div class="container-fluid call"><div><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control name" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br><br></div><div><label>Пожалуйста, введите реальный номер телефона чтобы мы смогли с вами связаться</label><input type="text" class="form-control tele" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br></div></div>',
 		showConfirmButton: false,
-		footer: '<div class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm">Заказать</a>'
+		footer: '<a class="red-button-sm">Заказать</a>'
 	})
 	var phoneMask = new IMask(
 		document.querySelector('.tele'), {
@@ -174,7 +174,6 @@ function swlZakazMain($div) {
 					<textarea class="form-control user-comment" rows="3"></textarea>
 				</div>
 			</div>
-			<div class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div>
 			<div class="form-group">
 				<div class="form-check">
 					<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
