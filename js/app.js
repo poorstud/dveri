@@ -22,11 +22,19 @@ function swlCallMe() {
 		document.querySelector('.es17_input .invalid-feedback').style.display = 'block';
 		return;
 	}
-	swal({
+	/*swal({
 		title: 'Закажите бесплатный звонок!',
 		showCloseButton: true,
 		width: 600,
 		html: '<form><div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>' + document.querySelector('.g-recaptcha').outerHTML,
+		showConfirmButton: false,
+		footer: '<a class="red-button-sm">Заказать</a></form>'
+	})*/
+	swal({
+		title: 'Закажите бесплатный звонок!',
+		showCloseButton: true,
+		width: 600,
+		html: '<form method="post"><input type="text" name="email"><input type="text" name="url">' + + document.querySelector('.g-recaptcha').outerHTML + '<input type="submint" name="sub_but"></form>',
 		showConfirmButton: false,
 		footer: '<a class="red-button-sm">Заказать</a></form>'
 	})
