@@ -28061,7 +28061,7 @@ span.red-button {cursor: pointer;}
 	display: none;
 }
 
-.swal2-content .invalid-feedback {
+.call .invalid-feedback {
 	margin: 1rem 0 0 .85rem;
 	font-size: 18px;
 	display: none;
