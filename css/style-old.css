@@ -28061,10 +28061,6 @@ span.red-button {cursor: pointer;}
 	display: none;
 }
 
-#recaptcha {
-    position: absolute;
-}
-
 .swal2-footer .red-button-sm {
     height: 35px;
     padding-top: 9px;
