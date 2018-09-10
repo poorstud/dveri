@@ -24,14 +24,16 @@ function swlCallMe() {
 	}
 	var verifyCallback = function(response) {
 			alert(response);
+			document.querySelector('.swal2-footer .red-button-sm').style.display = 'block';
+			document.querySelector('.g-recaptcha').style.display = 'none';
 		  };
 	swal({
 		title: 'Закажите бесплатный звонок!',
-		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br><div id="recaptcha"></div>',
+		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>',
 		showCloseButton: true,
 		showConfirmButton: false,
 		width: 600,
-		footer: '<a class="red-button-sm">Заказать</a></form>',
+		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm">Заказать</a></form>',
 		onOpen: function () {
 			grecaptcha.render('recaptcha', {
 				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
