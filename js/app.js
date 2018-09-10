@@ -23,7 +23,7 @@ function swlCallMe() {
 		return;
 	}
 	var verifyCallback = function(response) {
-			document.querySelector('.swal2-footer .red-button-sm').style.display = 'block';
+			document.querySelector('.swal2-footer .zak-btn').style.display = 'block';
 			document.querySelector('.g-recaptcha').style.display = 'none';
 		  };
 	swal({
@@ -32,7 +32,7 @@ function swlCallMe() {
 		showCloseButton: true,
 		showConfirmButton: false,
 		width: 600,
-		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm">Заказать</a></form>',
+		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm zak-btn">Заказать</a></form>',
 		onOpen: function () {
 			grecaptcha.render('recaptcha', {
 				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
