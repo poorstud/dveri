@@ -27973,8 +27973,10 @@ span.red-button {cursor: pointer;}
 
 .swal2-footer .red-button-sm {
     height: 35px;
-	padding-top: 9px;
-    margin-left: 71%;
+    padding-top: 9px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+	/*display: none;*/
 }
 
 .swal2-popup .swal2-footer {
@@ -28065,4 +28067,8 @@ span.red-button {cursor: pointer;}
 	margin: 1rem 0 0 .85rem;
 	font-size: 18px;
 	display: none;
+}
+
+#recaptcha {
+    position: absolute;
 }
