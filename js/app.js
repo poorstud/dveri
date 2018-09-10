@@ -23,7 +23,6 @@ function swlCallMe() {
 		return;
 	}
 	var verifyCallback = function(response) {
-			alert(response);
 			document.querySelector('.swal2-footer .red-button-sm').style.display = 'block';
 			document.querySelector('.g-recaptcha').style.display = 'none';
 		  };
