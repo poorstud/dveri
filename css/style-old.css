@@ -27971,14 +27971,6 @@ span.red-button {cursor: pointer;}
     margin-top: 3rem;
 }
 
-.swal2-footer .red-button-sm {
-    height: 35px;
-    padding-top: 9px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-	/*display: none;*/
-}
-
 .swal2-popup .swal2-footer {
     margin: 0 !important;
     padding-top: 0 !important;
@@ -28071,4 +28063,16 @@ span.red-button {cursor: pointer;}
 
 #recaptcha {
     position: absolute;
+}
+
+.swal2-footer .red-button-sm {
+    height: 35px;
+    padding-top: 9px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+	display: none;
+}
+
+.call {
+    height: 75px;
 }
