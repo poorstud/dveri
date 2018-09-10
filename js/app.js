@@ -74,13 +74,23 @@ function swlCallMe() {
 }
 
 function wantZamer() {
+	var verifyCallback = function(response) {
+			document.querySelector('.swal2-footer .zak-btn').style.display = 'block';
+			document.querySelector('.g-recaptcha').style.display = 'none';
+		  };
 	swal({
 		title: 'Закажите бесплатный замер!',
 		showCloseButton: true,
 		width: 600,
 		html: '<div class="container-fluid call"><div><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control name" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br><br></div><div><label>Пожалуйста, введите реальный номер телефона чтобы мы смогли с вами связаться</label><input type="text" class="form-control tele" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br></div></div>',
 		showConfirmButton: false,
-		footer: '<a class="red-button-sm">Заказать</a>'
+		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm">Заказать</a>',
+		onOpen: function () {
+			grecaptcha.render('recaptcha', {
+				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
+				'callback' : verifyCallback
+			});
+		}
 	})
 	var phoneMask = new IMask(
 		document.querySelector('.tele'), {
@@ -149,6 +159,10 @@ function swl2($div) { // main page
 }
 
 function swlZakazMain($div) {
+	var verifyCallback = function(response) {
+			document.querySelector('.swal2-footer .zak-btn').style.display = 'block';
+			document.querySelector('.g-recaptcha').style.display = 'none';
+		  };
 	swal({
 		title: 'Ваш заказ',
 		showCloseButton: true,
@@ -195,7 +209,13 @@ function swlZakazMain($div) {
 			</div>
 		</div>`,
 		showConfirmButton: false,
-		footer: '<button class="red-button-sm button-approve" disabled>Подтвердить</button>'
+		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><button class="red-button-sm button-approve zak-btn" disabled>Подтвердить</button>',
+		onOpen: function () {
+			grecaptcha.render('recaptcha', {
+				'sitekey': '6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9',
+				'callback' : verifyCallback
+			});
+		}
 	})
 	var phoneMask = new IMask(
 		document.querySelector('.input-tel'), {
