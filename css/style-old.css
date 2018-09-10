@@ -28061,11 +28061,14 @@ span.red-button {cursor: pointer;}
 	display: none;
 }
 
+
 .swal2-footer .red-button-sm {
     height: 35px;
     padding-top: 9px;
-    margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.swal2-footer .zak-btn {
 	display: none;
 }
 
