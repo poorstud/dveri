@@ -42,61 +42,86 @@
 		})();
 	</script>
 	<script type="text/javascript">
-		var host="dveri-v-vitebske.by";
-		if (( host == window.location.host && window.location.protocol != "https:"))
+		var host = "dveri-v-vitebske.by";
+		if ((host == window.location.host && window.location.protocol != "https:"))
 			window.location.protocol = "https:";
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125420400-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-125420400-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-125420400-1');
 	</script>
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function (d, w, c) {
+	<script type="text/javascript">
+		(function(d, w, c) {
 			(w[c] = w[c] || []).push(function() {
 				try {
 					w.yaCounter50256496 = new Ya.Metrika2({
-						id:50256496,
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true
+						id: 50256496,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
 					});
-				} catch(e) { }
+				} catch (e) {}
 			});
 
 			var n = d.getElementsByTagName("script")[0],
 				s = d.createElement("script"),
-				f = function () { n.parentNode.insertBefore(s, n); };
+				f = function() {
+					n.parentNode.insertBefore(s, n);
+				};
 			s.type = "text/javascript";
 			s.async = true;
 			s.src = "https://mc.yandex.ru/metrika/tag.js";
 
 			if (w.opera == "[object Opera]") {
 				d.addEventListener("DOMContentLoaded", f, false);
-			} else { f(); }
+			} else {
+				f();
+			}
 		})(document, window, "yandex_metrika_callbacks2");
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/50256496" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/50256496" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
 	<!-- /Yandex.Metrika counter -->
 	<!-- Rating@Mail.ru counter -->
 	<script type="text/javascript">
-	var _tmr = window._tmr || (window._tmr = []);
-	_tmr.push({id: "3057099", type: "pageView", start: (new Date()).getTime()});
-	(function (d, w, id) {
-	  if (d.getElementById(id)) return;
-	  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
-	  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
-	  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-	  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
-	})(document, window, "topmailru-code");
-	</script><noscript><div>
-	<img src="//top-fwz1.mail.ru/counter?id=3057099;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
-	</div></noscript>
+		var _tmr = window._tmr || (window._tmr = []);
+		_tmr.push({
+			id: "3057099",
+			type: "pageView",
+			start: (new Date()).getTime()
+		});
+		(function(d, w, id) {
+			if (d.getElementById(id)) return;
+			var ts = d.createElement("script");
+			ts.type = "text/javascript";
+			ts.async = true;
+			ts.id = id;
+			ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+			var f = function() {
+				var s = d.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(ts, s);
+			};
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "topmailru-code");
+	</script><noscript>
+		<div>
+			<img src="//top-fwz1.mail.ru/counter?id=3057099;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+		</div>
+	</noscript>
 	<!-- //Rating@Mail.ru counter -->
 </head>
 
@@ -126,15 +151,15 @@
 					<img src="img/logo.png" alt="Интерьер плюс">
 				</div>
 			</a>
-			<div class="top_block__item">
-				<div class="top_block__slogon top_block__slogon--1">Двери недорого и качественно?</div>
-				<div class="top_block__slogon top_block__slogon--2">У нас вы найдете то, что искали!</div>
+			<div class="top_block__item slogon">
+				<div class="top_block__slogon top_block__slogon--1">Входные и межкомнатные двери</div>
+				<div class="top_block__slogon top_block__slogon--2">с доставкой по Витебску и области</div>
 			</div>
 			<div class="top_block__item">
 				<a style="text-decoration:none;" class="black" href="tel:+375336703404">
 					<div class="top_block__tel comagic_phone">8 (033) 670-34-04</div>
 				</a>
-				<div class="top_block__vamperez" data-toggle="modal" data-target="#kupitDeshevle"><span class="want-zamer">Заказать замер</span></div>
+				<div class="top_block__vamperez" data-toggle="modal" data-target="#kupitDeshevle"><span class="want-zamer">Бесплатный замер</span></div>
 			</div>
 		</div>
 		<!--top_block -->
@@ -193,11 +218,11 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="nav navbar-nav navbar-right visible-lg">
+					<!--<ul class="nav navbar-nav navbar-right visible-lg">
 						<li>
 							<div class="menu_aksii"><a id="modal-akcii"><img src="img/menu_aksii.png" alt=""></a></div>
 						</li>
-					</ul>
+					</ul>-->
 				</div>
 			</div>
 		</nav>
@@ -208,6 +233,7 @@
 						<div class="es1_main__left_name__badg"></div>
 						<div class="es1_main__left_name__zag90">Продажа</div>
 						<div class="es1_main__left_name__zag70">доставка, установка</div>
+						<div class="es1_main__left_name__zag50">рассрочка на 12 месяцев без переплат</div>
 					</div>
 					<div class="es1_main__left_dayblock">
 						<div class="es1_main__skidka">скидка</div>
@@ -219,34 +245,6 @@
 							<div class="b-top__zamer_ruler "></div>
 							<div class="b-top__zamer_txt"><span>БЕСПЛАТНЫЙ</span><br> выезд замерщика</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="es17_bg">
-				<div class="container">
-					<div class="es17_girl">
-					</div>
-					<div class="es17__bcons">
-						Бесплатная консультация?
-					</div>
-					<div class="es17__rasp">
-						Ежедневно с&nbsp;8:00&nbsp;до&nbsp;19:00
-					</div>
-					<div class="clearfix"></div>
-					<div class="es17__tel comagic_phone">
-						<a style="text-decoration:none;color: #1a1918" href="tel:+375 (29) 670-34-04">
-							+375 (29) 670-34-04</a>
-					</div>
-					<div class="es17_blockbg">
-						<div class="es17_blockbg__ttl">Оставьте свой номер телефона и мы перезвоним Вам через 5&nbsp;минут</div>
-						<input type="hidden" name="sessid" id="sessid_3" value=""><input type="hidden" name="WEB_FORM_ID" value="7"><input type="hidden" name="lang" value="ru">
-							<div class="es17_input form-group">
-								<input type="text" placeholder="Телефон" class="phonemask" data-validation="required" id="form_text_10" data-field="phone" name="form_text_37" value="" size="0" onchange="checkEmpty(this)">
-								<div class="invalid-feedback">
-									Пожалуйста, проверьте правильность введенного номера!
-								</div>
-							</div>
-							<button class="red-button" id="perezv5min">Заказать звонок</button>
 					</div>
 				</div>
 			</div>
@@ -733,6 +731,7 @@
 								</div>
 							</li>
 						</ul>
+						<a class="red-button" onclick="">Посмотреть все</a>
 					</div>
 
 					<div class="wrap wrap-all">
@@ -1169,13 +1168,14 @@
 								</div>
 							</li>
 						</ul>
+						<a class="red-button" onclick="">Посмотреть все</a>
 					</div>
 				</div>
 
 				<div class="es3__podtext">
 					<span>Двери по выгодной&nbsp;акции</span>
 
-					<span><img src="img/es3_but.png" alt="" data-toggle="modal" data-target="#kupitDeshevle"></span>
+					<span><img class="want-zamer" src="img/es3_but.png" alt="" data-toggle="modal" data-target="#kupitDeshevle"></span>
 				</div>
 				<div class="b-line"></div>
 			</div>
@@ -1261,11 +1261,32 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="es13_14">
+			<div class="es17_bg">
 				<div class="container">
-					<h3>Компания «Интерьер плюс» 100%&nbsp;дешевле!</h3>
-					<div class="es13_14__desc">Компания «Интерьер плюс» продает и устанавливает двери по самым низким ценам в Витебске и области!</div>
+					<div class="es17_girl">
+					</div>
+					<div class="es17__bcons">
+						Бесплатная консультация
+					</div>
+					<div class="es17__rasp">
+						Ежедневно с&nbsp;8:00&nbsp;до&nbsp;19:00
+					</div>
+					<div class="clearfix"></div>
+					<div class="es17__tel comagic_phone">
+						<a style="text-decoration:none;color: #1a1918" href="tel:+375 (29) 670-34-04">
+							+375 (29) 670-34-04</a>
+					</div>
+					<div class="es17_blockbg">
+						<div class="es17_blockbg__ttl">Оставьте свой номер телефона и мы перезвоним Вам через 5&nbsp;минут</div>
+						<input type="hidden" name="sessid" id="sessid_3" value=""><input type="hidden" name="WEB_FORM_ID" value="7"><input type="hidden" name="lang" value="ru">
+						<div class="es17_input form-group">
+							<input type="text" placeholder="Телефон" class="phonemask" data-validation="required" id="form_text_10" data-field="phone" name="form_text_37" value="" size="0" onchange="checkEmpty(this)">
+							<div class="invalid-feedback">
+								Пожалуйста, проверьте правильность введенного номера!
+							</div>
+						</div>
+						<button class="red-button" id="perezv5min">Заказать звонок</button>
+					</div>
 				</div>
 			</div>
 		</div>
