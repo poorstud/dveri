@@ -28,7 +28,7 @@ function swlCallMe() {
 		  };
 	swal({
 		title: 'Закажите бесплатный звонок!',
-		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br>',
+		html: '<div class="container-fluid call"><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div>',
 		showCloseButton: true,
 		showConfirmButton: false,
 		width: 600,
@@ -82,7 +82,7 @@ function wantZamer() {
 		title: 'Закажите бесплатный замер!',
 		showCloseButton: true,
 		width: 600,
-		html: '<div class="container-fluid zamer"><div><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control name" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br><br></div><div><label>Пожалуйста, введите реальный номер телефона чтобы мы смогли с вами связаться</label><input type="text" class="form-control tele" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br></div></div>',
+		html: '<div class="container-fluid zamer"><div><label>Пожалуйста, введите реальные фамилию имя и отчество, чтобы мы знали как к вам обращаться</label><input type="text" class="form-control name" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div></div><br><div><label>Пожалуйста, введите реальный номер телефона чтобы мы смогли с вами связаться</label><input type="text" class="form-control tele" onchange="checkEmpty(this)"><div class="invalid-feedback">Поле обязательно для заполнения!</div><br></div></div>',
 		showConfirmButton: false,
 		footer: '<div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf68W4UAAAAABPphYIkPzVIVKQWSUqk-WfHLu_9"></div><a class="red-button-sm zak-btn">Заказать</a>',
 		onOpen: function () {
@@ -277,7 +277,7 @@ document.querySelector('#credit').addEventListener('click', () => {
 	})
 })
 
-document.querySelector('#modal-akcii').addEventListener('click', () => {
+/* document.querySelector('#modal-akcii').addEventListener('click', () => {
 	console.log('modal-akcii');
 	swal({
 		showCloseButton: true,
@@ -285,7 +285,7 @@ document.querySelector('#modal-akcii').addEventListener('click', () => {
 		html: document.querySelector('.modal-akcii').innerHTML,
 		showConfirmButton: false,
 	})
-})
+})*/
 
 document.querySelector('#go-main').addEventListener('click', () => {
 	document.querySelector('.outdoor-page').style.display = 'none';
