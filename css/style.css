@@ -410,7 +410,7 @@ button {
 /* line 3, ../../sass/blocks/top_block/_top_block.sass */
 .top_block__item {
   display: inline-block;
-  width: 33%;
+  width: 30%;
   vertical-align: top; }
 
 /* line 7, ../../sass/blocks/top_block/_top_block.sass */
@@ -1478,7 +1478,7 @@ button {
 
 /* line 7, ../../sass/blocks/es3/_es3.sass */
 .es3 .es3__podtext {
-  margin: 10px auto; }
+  margin: 120px auto 0; }
   /* line 9, ../../sass/blocks/es3/_es3.sass */
   .es3 .es3__podtext span {
     display: inline-block;

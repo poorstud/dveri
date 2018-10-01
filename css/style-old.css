@@ -5292,6 +5292,14 @@ a.blue:hover {
 
 }
 
+.es1_main_bg .es1_main__left_name .es1_main__left_name__zag50 {
+    margin-top: 1rem;
+    font-size: 3.5em;
+    color: #0b0b0b;
+    font-family: 'pfdindisplaypro';
+    line-height: 1;
+}
+
 .es1_main_bg .es1_main__left_name .es1_main__left_name__badg {
     position: absolute;
     width: 101px;
@@ -5360,10 +5368,9 @@ a.blue:hover {
 }
 
 .es1_main_bg .es1_main__day {
-    font-size: 2.6em;
+    font-size: 2em;
     color: #0b0b0b;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
     line-height: 1;
@@ -5375,7 +5382,7 @@ a.blue:hover {
 .es1_main_bg .es1_main__skidka {
     font-size: 62px;
     color: #0b0b0b;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'pfdindisplaypro';
     text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
@@ -16669,12 +16676,10 @@ a.blue:hover {
 }
 
 .es17_bg {
-	margin-top: 60px;
+	margin-top: -25px;
     height: 644px;
     background: url(..\\img\\es17_bg.jpg) center center no-repeat;
     position: relative;
-    z-index: 1;
-	box-shadow: 0 0 8px 8px white inset;
 }
 
 .es17_bg .es17__bcons {
@@ -16754,7 +16759,7 @@ a.blue:hover {
     height: 551px;
     background: url(..\\img\\es17_girl.png) no-repeat center center;
     position: absolute;
-    margin: 82px 0px 0px 700px;
+    margin: 93px 0px 0px 700px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -17129,7 +17134,6 @@ a.blue:hover {
 
 .es18_bg {
     min-height: 136px;
-	margin-top: 60px;
     background: url(..\\img\\es18_bg.png) center center no-repeat;
 }
 
@@ -28041,6 +28045,10 @@ span.red-button {cursor: pointer;}
 	margin-top: 1.5rem;
 }
 
+.zamer .invalid-feedback {
+    margin: .5rem 0;
+}
+
 .descroption-text {
     font-size: 14px;
     margin: -50px 0 40px 0;
@@ -28051,7 +28059,7 @@ span.red-button {cursor: pointer;}
 }
 
 .es17_input .invalid-feedback {
-    margin: .4rem 0 0 .85rem;
+    margin: 1rem 0 0 .85rem;
 	display: none;
 }
 
@@ -28074,4 +28082,34 @@ span.red-button {cursor: pointer;}
 
 .call {
     height: 75px;
+}
+
+.zamer {
+	height: 220px;
+}
+
+.slogon {
+    width: 39% !important;
+}
+
+.g-recaptcha {
+    margin-top: 1rem;
+}
+
+.wrap-min .red-button {
+    display: table;
+    margin: 60px auto;
+}
+
+.wrap-all .red-button {
+    display: table;
+    margin: 35px auto;
+}
+
+.wrap-min {
+	margin-top: 60px;
+}
+
+.wrap-all {
+	margin-top: 200px;
 }
