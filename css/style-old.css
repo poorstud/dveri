@@ -28106,10 +28106,20 @@ span.red-button {cursor: pointer;}
     margin: 35px auto;
 }
 
+.red-button:hover,
+.red-button:focus {
+	text-decoration: none;
+	color: #fff;
+}
+
 .wrap-min {
 	margin-top: 60px;
 }
 
 .wrap-all {
 	margin-top: 200px;
+}
+
+.indoor-page, .outdoor-page {
+    margin-bottom: 60px;
 }
