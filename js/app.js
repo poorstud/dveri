@@ -300,3 +300,15 @@ function checkEmpty($div) {
 		$div.parentNode.querySelector('.invalid-feedback').style.display = 'none';
 	}
 }
+
+function vhDoors() {
+	document.querySelector('.outdoor-page').style.display = 'block';
+	document.querySelector('.main-page').style.display = 'none';
+	document.querySelector('.indoor-page').style.display = 'none';
+}
+
+function mkDoors() {
+	document.querySelector('.outdoor-page').style.display = 'none';
+	document.querySelector('.main-page').style.display = 'none';
+	document.querySelector('.indoor-page').style.display = 'block';
+}
