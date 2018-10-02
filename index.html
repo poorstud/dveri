@@ -179,7 +179,7 @@
 					<ul class="nav navbar-nav">
 
 						<li class="dropdown ">
-							<a href="#" onclick="document.querySelector('.outdoor-page').style.display = 'none';document.querySelector('.main-page').style.display = 'none';document.querySelector('.indoor-page').style.display = 'block';" class="dropdown-toggle top1">Межкомнатные двери</a>
+							<a href="#" onclick="mkDoors()" class="dropdown-toggle top1">Межкомнатные двери</a>
 							<!-- <ul class="dropdown-menu" style="margin-left: -37px">
 								<li>
 									<div class="menu_str hidden-xs"></div>
@@ -194,7 +194,7 @@
 							</ul> -->
 						</li>
 						<li class="dropdown ">
-							<a href="#" class="dropdown-toggle top2" data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="false" onclick="document.querySelector('.outdoor-page').style.display = 'block';document.querySelector('.main-page').style.display = 'none';document.querySelector('.indoor-page').style.display = 'none';">Входные двери</a>
+							<a href="#" class="dropdown-toggle top2" data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="false" onclick="vhDoors()">Входные двери</a>
 							<!--<ul class="dropdown-menu" style="margin-left: -50px">
 								<li>
 									<div class="menu_str hidden-xs"></div>
@@ -731,7 +731,7 @@
 								</div>
 							</li>
 						</ul>
-						<a class="red-button" onclick="">Посмотреть все</a>
+						<a class="red-button" href="#" onclick="mkDoors()">Посмотреть все</a>
 					</div>
 
 					<div class="wrap wrap-all">
@@ -1168,7 +1168,7 @@
 								</div>
 							</li>
 						</ul>
-						<a class="red-button" onclick="">Посмотреть все</a>
+						<a class="red-button" href="#" onclick="vhDoors()">Посмотреть все</a>
 					</div>
 				</div>
 
@@ -4414,6 +4414,7 @@
 											</div>
 										</div>
 									</div>
+									<div class="dvrazdtchk"></div>
 								</div>
 
 								<div class="b-catalog__item">
@@ -4716,6 +4717,7 @@
 											</div>
 										</div>
 									</div>
+									<div class="dvrazdtchk"></div>
 								</div>
 
 								<div class="b-catalog__item">
@@ -4970,6 +4972,7 @@
 											</div>
 										</div>
 									</div>
+									<div class="dvrazdtchk"></div>
 								</div>
 
 								<div class="b-catalog__item">
@@ -5240,6 +5243,7 @@
 											</div>
 										</div>
 									</div>
+									<div class="dvrazdtchk"></div>
 								</div>
 
 								<div class="b-catalog__item">
@@ -5510,6 +5514,7 @@
 											</div>
 										</div>
 									</div>
+									<div class="dvrazdtchk"></div>
 								</div>
 
 								<div class="b-catalog__item">
@@ -5778,8 +5783,8 @@
 			<div class="container">
 				<div class="col-md-2 es18_logo visible-lg visible-md"><img src="img/es18_logo.png" alt=""></div>
 				<div class="col-md-10 es18_link">
-					<a class="btn btn-link es18_ico1" href="#" onclick="document.querySelector('.outdoor-page').style.display = 'none';document.querySelector('.main-page').style.display = 'none';document.querySelector('.indoor-page').style.display = 'block';">Межкомнатные двери</a>
-					<a class="btn btn-link es18_ico2" href="#" onclick="document.querySelector('.outdoor-page').style.display = 'block';document.querySelector('.main-page').style.display = 'none';document.querySelector('.indoor-page').style.display = 'none';">Входные двери</a>
+					<a class="btn btn-link es18_ico1" href="#" onclick="mkDoors()">Межкомнатные двери</a>
+					<a class="btn btn-link es18_ico2" href="#" onclick="vhDoors()">Входные двери</a>
 					<a class="btn btn-link es18_ico4" href="#" onclick="swal({title: 'Контакты',showCloseButton: true,width: 640,html: document.querySelector('.modal-contacts').innerHTML,showConfirmButton: false,})">Контакты</a>
 				</div>
 			</div>
