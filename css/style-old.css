@@ -17133,6 +17133,7 @@ a.blue:hover {
 }
 
 .es18_bg {
+	margin-top: -4px;
     min-height: 136px;
     background: url(..\\img\\es18_bg.png) center center no-repeat;
 }
