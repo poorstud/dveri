@@ -5265,7 +5265,7 @@ a.blue:hover {
 .es1_main_bg {
     /*height: 702px;*/
     height: 670px;
-    background: url(..\\img\\main_bg.png) 43% top no-repeat
+    background: url(..\\img\\main_bg.jpg) 43% top no-repeat
 }
 
 .es1_main_bg .es1_main__left_name {
@@ -5444,7 +5444,7 @@ a.blue:hover {
 
 @media only screen and (max-width: 1200px) {
     .es1_main_bg {
-        background:url(..\\img\\main_bg.png) 50% top no-repeat
+        background:url(..\\img\\main_bg.jpg) 50% top no-repeat
     }
 
     .es1_main_bg .es1_bg__right_col {
@@ -5455,7 +5455,7 @@ a.blue:hover {
 @media only screen and (max-width: 992px) {
     .es1_main_bg {
         height:auto;
-        background: url(..\\img\\main_bg.png) 58% top no-repeat
+        background: url(..\\img\\main_bg.jpg) 58% top no-repeat
     }
 
     .es1_main_bg .es1_main__left_name {
@@ -5620,7 +5620,7 @@ a.blue:hover {
 @media only screen and (max-width: 767px) {
     .es1_main_bg {
         height:auto;
-        background: url(..\\img\\main_bg.png) 58% top no-repeat;
+        background: url(..\\img\\main_bg.jpg) 58% top no-repeat;
         background-size: 120%
     }
 
