@@ -38,7 +38,11 @@ body {
 @media (min-width: 768px) {
   /* line 12, ../../sass/_common.sass */
   .container {
-    width: 750px; } }
+    width: 750px; } 
+	.number {
+    margin-left: 20px;
+}
+}
 @media (min-width: 992px) {
   /* line 16, ../../sass/_common.sass */
   .container {
@@ -46,7 +50,7 @@ body {
 @media (min-width: 1200px) {
   /* line 20, ../../sass/_common.sass */
   .container {
-    width: 1180px; } }
+	width: 1200px;} }
 /* line 23, ../../sass/_common.sass */
 .clear {
   clear: both; }
@@ -411,7 +415,7 @@ button {
 .top_block__item {
   display: inline-block;
   width: 30%;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 /* line 7, ../../sass/blocks/top_block/_top_block.sass */
 .top_block__slogon {
@@ -421,9 +425,7 @@ button {
 
 /* line 12, ../../sass/blocks/top_block/_top_block.sass */
 .top_block__slogon--2 {
-  text-align: right;
-  margin-top: 5px;
-  margin-right: -15px; }
+  text-align: right; }
 
 /* line 16, ../../sass/blocks/top_block/_top_block.sass */
 .top_block__slogon--1 {
@@ -436,7 +438,8 @@ button {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   text-align: right;
-  margin-top: 10px; }
+  margin-top: 10px;
+  transform: translateX(10%);}
 
 /* line 25, ../../sass/blocks/top_block/_top_block.sass */
 .top_block__vamperez {
@@ -456,39 +459,23 @@ button {
   /* line 39, ../../sass/blocks/top_block/_top_block.sass */
   .top_block {
     margin-top: 10px; }
-
-  /* line 41, ../../sass/blocks/top_block/_top_block.sass */
-  .top_block__slogon {
-    font-size: 20px; }
-
   /* line 43, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__tel {
-    font-size: 26px;
-    margin-top: 30px; }
+    font-size: 26px; }
 
   /* line 46, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__vamperez {
-    font-size: 20px; }
-
-  /* line 48, ../../sass/blocks/top_block/_top_block.sass */
-  .top_block__slogon--1 {
-    margin-top: 35px; } }
+    font-size: 20px; } }
 @media only screen and (max-width: 992px) {
   /* line 52, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__logo img {
     width: 100%; }
-
-  /* line 54, ../../sass/blocks/top_block/_top_block.sass */
-  .top_block__slogon {
-    font-size: 16px; }
-
+	.phones {
+    height: 50px;
+	}
   /* line 56, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__vamperez {
-    font-size: 18px; }
-
-  /* line 58, ../../sass/blocks/top_block/_top_block.sass */
-  .top_block__slogon--1 {
-    margin-top: 42px; } }
+    font-size: 18px; } }
 @media only screen and (max-width: 767px) {
   /* line 62, ../../sass/blocks/top_block/_top_block.sass */
   .top_block {
@@ -529,6 +516,11 @@ button {
   /* line 82, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__tel {
     margin-top: 5px; }
+	
+	.top_block__tel {
+    transform: none;
+	text-align: center;
+}
 
   /* line 84, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__vamperez {
@@ -647,6 +639,10 @@ button {
   .es1_bg._mezh .es1_oknoman {
     max-width: 545px;
     width: 100%; }
+	
+	 /* line 54, ../../sass/blocks/top_block/_top_block.sass */
+  .top_block__slogon {
+    font-size: 16px; }
 
   /* line 82, ../../sass/blocks/es1/_es1.sass */
   .es1_skid {
