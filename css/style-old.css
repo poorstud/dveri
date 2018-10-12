@@ -2112,3 +2112,8 @@ span.red-button {cursor: pointer;}
     height: 60px;
     position: absolute;
 }
+
+.ne-nuzhno--ruler {
+    margin-top: 20px;
+    margin-left: -25px;
+}
