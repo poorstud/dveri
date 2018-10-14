@@ -266,8 +266,7 @@ function swlZakazMain($div) {
 	})
 }
 
-document.querySelector('#credit').addEventListener('click', () => {
-	console.log('credit');
+function credit() {
 	swal({
 		title: 'Рассрочка без переплат до 12 месяцев!',
 		showCloseButton: true,
@@ -275,7 +274,7 @@ document.querySelector('#credit').addEventListener('click', () => {
 		html: document.querySelector('.modal-credit').innerHTML,
 		showConfirmButton: false,
 	})
-})
+}
 
 /* document.querySelector('#modal-akcii').addEventListener('click', () => {
 	console.log('modal-akcii');
