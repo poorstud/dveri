@@ -1625,36 +1625,7 @@ button {
     /* line 34, ../../sass/blocks/es12/_es12.sass */
     .es12_bg .es12_ico_name {
       font-size: 2.5em;
-      margin: -20px auto 35px auto; } }
-/* line 1, ../../sass/blocks/es13_bg/_es13_bg.sass */
-.es13_item {
-  display: inline-block;
-  vertical-align: top; }
-
-/* line 4, ../../sass/blocks/es13_bg/_es13_bg.sass */
-.es13_block {
-  text-align: center; }
-
-@media only screen and (max-width: 480px) {
-  /* line 10, ../../sass/blocks/es13_bg/_es13_bg.sass */
-  .es13_bg .container {
-    padding-left: 5px;
-    padding-right: 5px; } }
-@media only screen and (max-width: 992px) {
-  /* line 3, ../../sass/blocks/es13_14/es13_14.sass */
-  .es13_14 .es13_14__desc {
-    font-size: 28px;
-    line-height: 1.2; } }
-@media only screen and (max-width: 767px) {
-  /* line 8, ../../sass/blocks/es13_14/es13_14.sass */
-  .es13_14 .es13_14__desc {
-    font-size: 20px;
-    width: 80%;
-    margin: auto; } }
-@media only screen and (max-width: 480px) {
-  /* line 13, ../../sass/blocks/es13_14/es13_14.sass */
-  .es13_14 .es13_14__desc {
-    width: 100%; } }
+      margin: -20px auto 35px auto; } } 
 /* line 2, ../../sass/blocks/es14_bg/_es14_bg.sass */
 .es14_bg h2 {
   padding: 30px 20px 150px !important; }
