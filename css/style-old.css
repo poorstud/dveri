@@ -2290,6 +2290,14 @@ span.red-button {cursor: pointer;}
     }
 }
 
+.ne-nuzhno--ruler {
+    margin: 25px 0 0 -30px;
+}
+
+.contacts_bg  {
+    background: url(..\\img\\es13_bg2.png);
+}
+
 .contacts_bg .row {
     margin-right: 0 !important; 
 }
@@ -2305,9 +2313,21 @@ span.red-button {cursor: pointer;}
     font-weight: 300;
     padding: 2rem 0 0 3rem;
     list-style-type: none;
-    transform: translateY(50%);
+    transform: translateY(55%);
 }
 
 .es13_bg .container {
     transform: translateY(50%);
+}
+
+._top .es13_ico__lenta {
+	margin: 2px 0 0 -10px;
+}
+
+._note .es13_ico__lenta {
+	margin: 18px 0 0 -5px;
+}
+
+._calc .es13_ico__lenta {
+	margin-top: 18px;
 }
