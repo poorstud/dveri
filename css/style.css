@@ -471,12 +471,21 @@ button {
   .top_block__logo img {
     width: 100%; }
 	.phones {
-    height: 50px;
+    height: 35px;
 	}
   /* line 56, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__vamperez {
     font-size: 18px; } }
 @media only screen and (max-width: 767px) {
+	.slogon {
+		width: 80% !important;
+	}
+	.number {
+		width: 220px !important;
+	}
+	.phones {
+		top: auto;
+	}
   /* line 62, ../../sass/blocks/top_block/_top_block.sass */
   .top_block {
     text-align: center; }
@@ -490,7 +499,7 @@ button {
 
   /* line 69, ../../sass/blocks/top_block/_top_block.sass */
   .top_block__logo img {
-    width: auto;
+    /*width: auto;*/
     padding-left: 55px; }
 
   /* line 72, ../../sass/blocks/top_block/_top_block.sass */
@@ -3855,7 +3864,27 @@ button {
 
   /* line 454, ../../sass/blocks/katalog/_katalog.sass */
   .katalog__price_block {
-    margin: auto; }
+    margin: auto; width: 100%;}
+	
+	.tdtop .razmdvvn .vntext {
+		font-size: 15px;}
+	.swiper-pagination-custom .swiper-pagination-style div {
+		display: none;}
+	.tdtop .razmdvvn.color {
+		height: 230px;}
+	.col-md-5 {
+    color: #555;}
+	.col-md-7 {
+    color: #777;}
+	.about-inf {
+		margin: 1rem 0 1rem 1rem;}
+	.swal2-popup .swal2-title {
+		font-size: 1.4em !important;}
+	.zakaz-modal .container-fluid {display: block;position: relative;margin: 55px -10px;width: 100%;}
+	.form-check {display: flex;width: 280px;}
+	.zamer {height: auto;}
+	.zakaz-modal {margin-bottom: -70px;}
+	.zakaz-modal img {margin-left: 50%;transform: translateX(-50%);}
 
   /* line 456, ../../sass/blocks/katalog/_katalog.sass */
   .plus-prezent {
@@ -3959,7 +3988,7 @@ button {
 
   /* line 520, ../../sass/blocks/katalog/_katalog.sass */
   .dvnazv {
-    font-size: 29px;
+    font-size: 24px;
     line-height: 1; }
 
   /* line 523, ../../sass/blocks/katalog/_katalog.sass */
@@ -5159,18 +5188,18 @@ span.red-button {
       padding-top: 20px;
       font-size: 2em;
       line-height: 1;
-      margin-left: 25px; }
+      margin-left: 50px; }
     /* line 56, ../../sass/blocks/b-top__zamer/_b-top__zamer.sass */
     .b-top__zamer .b-top__zamer_ruler {
       -moz-transform: scale(0.7);
       -ms-transform: scale(0.7);
       -webkit-transform: scale(0.7);
       transform: scale(0.7);
-      margin-left: -42px;
+      margin-left: -20px;
       margin-top: 6px; } }
 /* lib for sprites */
 /* line 104, icon/*.png */
-.icon-sprite, .icon-seo, .icon-str, .b-footer-menu_slogan:after, .icon-str2, .b-footer-menu_slogan:before, .icon-top1, .top_menu .dropdown-toggle.top1:before, .icon-top2, .top_menu .dropdown-toggle.top2:before, .icon-top3, .top_menu .dropdown-toggle.top3:before, .icon-top4, .top_menu .dropdown-toggle.top4:before, .icon-zamer, .b-zamer:before {
+.icon-sprite, .icon-seo, .icon-str, .b-footer-menu_slogan:after, .icon-str2, .b-footer-menu_slogan:before, .icon-top1, .top_menu .dropdown-toggle.top1:before, .icon-top2, .top_menu .dropdown-toggle.top2:before, .icon-top3, .top_menu .dropdown-toggle.top3:before, .icon-top4, .top_menu .dropdown-toggle.top4:before, .dropdown-toggle.top5:before, .icon-zamer, .b-zamer:before {
   background-image: url('..\\img\\icon-s308b7fd55c.png');
   background-repeat: no-repeat; }
 
@@ -5222,6 +5251,11 @@ span.red-button {
   height: 43px;
   width: 55px; }
 
+.icon-top5, .top_menu .dropdown-toggle.top5:before {
+  background-position: -28px -106px;
+  height: 38px;
+  width: 28px; }
+  
 /* line 16, ../../sass/_icon.sass */
 *[class^='icon-'] {
   display: inline-block; }
