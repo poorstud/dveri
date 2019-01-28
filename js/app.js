@@ -1,7 +1,10 @@
-'use strict';
-
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+	setTimeout(function () {
+		document.querySelector('.lding').style.display = 'none';
+	}, 2342)
+}
 document.onreadystatechange = function () {
-	if (document.readyState === 'complete') {
+	if (document.readyState == 'complete') {
 		var arr = document.querySelectorAll('.swiper-pagination-custom .active');
 		arr.forEach(function (item, i, arr) {
 			item.click();
@@ -248,18 +251,4 @@ function checkEmpty($div) {
 	} else {
 		$div.parentNode.querySelector('.invalid-feedback').style.display = 'none';
 	}
-}
-
-function vhDoors() {
-	document.querySelector('.outdoor-page').style.display = 'block';
-	document.querySelector('.main-page').style.display = 'none';
-	document.querySelector('.indoor-page').style.display = 'none';
-	document.querySelector('#doors-container').scrollIntoView();
-}
-
-function mkDoors() {
-	document.querySelector('.indoor-page').style.display = 'block';
-	document.querySelector('.main-page').style.display = 'none';
-	document.querySelector('.outdoor-page').style.display = 'none';
-	document.querySelector('#doors-container').scrollIntoView();
 }
