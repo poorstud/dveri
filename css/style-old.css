@@ -126,9 +126,17 @@ ul {
     body {
         font-size: 40%
     }
+	.swcontacts iframe {
+		margin-top: -410px !important;
+	    width: 90vw;
+		height: 460px;
+		margin-left: -.85rem;
+	}
+	.gmapp {
+		height: 400px !important;
+	}
 }
 .es1_main_bg {
-    /*height: 702px;*/
     height: 670px;
     background: url(..\\img\\main_bg.jpg) 43% top no-repeat
 }
@@ -1611,10 +1619,6 @@ span.red-button {cursor: pointer;}
 .swcontacts {
 	text-align: left;
 }
-.swcontacts iframe {
-    margin-top: -450px;
-    display: block;
-}
 .swcontacts ul {
 	list-style-type: none;
 	font-weight: 600;
@@ -1666,7 +1670,8 @@ span.red-button {cursor: pointer;}
 .swal2-content img {
     display: inline-block;
     margin-left: 1rem;
-    height: 440px;
+    width: 100%;
+    height: 100%;
 }
 .about-inf {
     margin: 1rem 0 1rem 60px;
